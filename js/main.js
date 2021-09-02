@@ -3,10 +3,20 @@
 
 //Создайте страницу, которая предлагает ввести два числа и выводит их сумму
 //------------------------------------------------------------------------
-	/*let numberFirst = prompt("Введите первое число");
-	let numberSecond = prompt("Введите второе число");
-	alert(Number(numberFirst) + Number(numberSecond));*/
+	/*let numberFirst = +prompt("Введите первое число");
+	if (isNaN(parseInt(numberFirst, 10))) {
+		alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
+		return(numberFirst);
+	} else {
+	var numberSecond = +prompt("Введите второе число");
+}
 
+if (isNaN(parseInt(numberSecond, 10))) {
+		alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
+		return(numberSecond);
+	} else {
+	alert(numberFirst + numberSecond);
+}*/
 
 //Имитация бросания двух игральных костей
 //------------------------------------------------------------------------
@@ -21,7 +31,7 @@
 	/*alert("Киньте монетку");
 	let sideCoin = Math.floor(Math.random() * 2) + 1;
 
-	if (sideCoin == 1) { 
+	if (sideCoin === 1) { 
 		document.write("Орел");
 	} else {
 		document.write("Решка");
@@ -29,17 +39,31 @@
 
 
 //Создать программу, которая принимает значение от пользователя, а затем выводит случайное число от 1 до числа, что ввел пользователь.
-/*let userNumber = prompt("Введите число");
-alert(Math.floor(Math.random() * userNumber + 1));
+/*let userNumber = +prompt("Введите число");
+if (isNaN(parseInt(userNumber, 10))) {
+		alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
+		return(userNumber);
+	} else {
+	alert(Math.floor(Math.random() * userNumber + 1));
+}
 */
 
 
 //Создать программу, которая принимает два значение от пользователя, а затем выводит случайное число от первого до второго числа, что ввел пользователь.
 //---------------------------------------------------------------
-	/*let firstNumber = prompt("Введите первое число");
-	let secondNumber = prompt("Введите второе число");
+/*var firstNumber = +prompt("Введите первое число");
+	if (isNaN(parseInt(firstNumber, 10))) {
+		alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
+		return(firstNumber);
+	} else {
+	var secondNumber = +prompt("Введите второе число");
+}
 
-	if (secondNumber > firstNumber) {
+if (isNaN(parseInt(secondNumber, 10))) {
+		alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
+		return(secondNumber);
+	} else if (secondNumber > firstNumber) 
+	{
 		let randomNumber = Math.floor(Math.random() * secondNumber + 1);
 		if (randomNumber > firstNumber) {
 			alert(randomNumber);
@@ -48,7 +72,7 @@ alert(Math.floor(Math.random() * userNumber + 1));
 		}
 	}
 
-	if (secondNumber < firstNumber) {
+	else if (secondNumber < firstNumber) {
 		let randomNumber = Math.floor(Math.random() * firstNumber + 1);
 		if (randomNumber > secondNumber)	{
 			alert(randomNumber);
@@ -57,7 +81,7 @@ alert(Math.floor(Math.random() * userNumber + 1));
 		}
 	}
 
-	if (secondNumber === firstNumber) {
+	else if (secondNumber === firstNumber) {
 		alert("Введите разные числа");
 	}*/
 
@@ -92,12 +116,11 @@ result = \'Много\';
 /*let userLogin = prompt("Введите login");
 
 if (userLogin == "Админ") {
-	let userParol = prompt("Введите Parol");
-	alert(userParol);
+	let userPassword = prompt("Введите пароль");
 
-	if (userParol == "Чёрный Властелин") {
+	if (userPassword == "Чёрный Властелин") {
 		alert("Добро пожаловать!");
-	} else if (userParol === null) {
+	} else if (userPassword === null) {
 		alert("Вход отменён");
 	} else {
 		alert("Пароль неверен");
