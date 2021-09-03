@@ -3,27 +3,31 @@
 
 //Создайте страницу, которая предлагает ввести два числа и выводит их сумму
 //------------------------------------------------------------------------
-	/*let numberFirst = +prompt("Введите первое число");
-	if (isNaN(parseInt(numberFirst, 10))) {
-		alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
-		return(numberFirst);
-	} else {
-	var numberSecond = +prompt("Введите второе число");
+/*let firstNumber = prompt("Введите первое число");
+let secondNumber;
+
+if (firstNumber === null) {
+	alert("Введите число");
+} else if (!isNaN(parseInt(firstNumber))) {
+	secondNumber = prompt("Введите второе число");
 }
 
-if (isNaN(parseInt(numberSecond, 10))) {
-		alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
-		return(numberSecond);
-	} else {
-	alert(numberFirst + numberSecond);
+if (secondNumber === null) {
+	alert("Введите число");
+} else if (!isNaN(parseInt(secondNumber))) {
+	alert(+firstNumber + +secondNumber);
+} else {
+	alert("Введите числовое значение");
 }*/
+
+
 
 //Имитация бросания двух игральных костей
 //------------------------------------------------------------------------
 	/*let firstGameCube= Math.floor(Math.random() * 6) + 1;
 	let secondGameCube= Math.floor(Math.random() * 6) + 1;
 	document.write("Числа на кубиках " + firstGameCube +
-		" и " + secondGameCube);*/
+	" и " + secondGameCube);*/
 
 
 //Имитация игры орел-решка
@@ -39,51 +43,44 @@ if (isNaN(parseInt(numberSecond, 10))) {
 
 
 //Создать программу, которая принимает значение от пользователя, а затем выводит случайное число от 1 до числа, что ввел пользователь.
-/*let userNumber = +prompt("Введите число");
-if (isNaN(parseInt(userNumber, 10))) {
-		alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
-		return(userNumber);
-	} else {
+/*let userNumber = prompt("Введите число");
+if (isNaN(parseInt(userNumber))) {
+	alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
+} else if (userNumber === null) {
+	alert("Введите число");
+	
+} else {
 	alert(Math.floor(Math.random() * userNumber + 1));
-}
-*/
+}*/
+
 
 
 //Создать программу, которая принимает два значение от пользователя, а затем выводит случайное число от первого до второго числа, что ввел пользователь.
 //---------------------------------------------------------------
-/*var firstNumber = +prompt("Введите первое число");
-	if (isNaN(parseInt(firstNumber, 10))) {
-		alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
-		return(firstNumber);
-	} else {
-	var secondNumber = +prompt("Введите второе число");
+
+/*if (isNaN(parseInt(secondNumber, 10))) {
+	alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
+	return(secondNumber);
 }
-
-if (isNaN(parseInt(secondNumber, 10))) {
-		alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
-		return(secondNumber);
-	} else if (secondNumber > firstNumber) 
-	{
-		let randomNumber = Math.floor(Math.random() * secondNumber + 1);
-		if (randomNumber > firstNumber) {
-			alert(randomNumber);
-		} else {
-			return(randomNumber);
-		}
+else if (secondNumber > firstNumber) {
+	let randomNumber = Math.floor(Math.random() * secondNumber + 1);
+	if (randomNumber > firstNumber) {
+		alert(randomNumber);
+	} else {
+		return randomNumber;
 	}
-
-	else if (secondNumber < firstNumber) {
-		let randomNumber = Math.floor(Math.random() * firstNumber + 1);
-		if (randomNumber > secondNumber)	{
-			alert(randomNumber);
-		} else {
-			return(randomNumber);
-		}
+}
+else if (secondNumber < firstNumber) {
+	let randomNumber = Math.floor(Math.random() * firstNumber + 1);
+	if (randomNumber > secondNumber)	{
+		alert(randomNumber);
+	} else {
+		return(randomNumber);
 	}
-
-	else if (secondNumber === firstNumber) {
-		alert("Введите разные числа");
-	}*/
+}
+else if (secondNumber === firstNumber) {
+	alert("Введите разные числа");
+}*/
 
 
 //Используя конструкцию if..else, напишите код, который будет спрашивать: «Каково «официальное» название JavaScript?».
