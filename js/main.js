@@ -3,23 +3,28 @@
 
 //Создайте страницу, которая предлагает ввести два числа и выводит их сумму
 //------------------------------------------------------------------------
-/*let firstNumber = prompt("Введите первое число");
-let secondNumber;
+/*let numberFirst = prompt("Введите первое число");
 
-if (firstNumber === null) {
-	alert("Введите число");
-} else if (!isNaN(parseInt(firstNumber))) {
-	secondNumber = prompt("Введите второе число");
-}
+    if (isNaN(+numberFirst)) {
+        alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
+    } else if (numberFirst.trim() === '') {
+        alert("Значение не может быть пустым!");
+    } else if (numberFirst === null) {
+        alert("До встречи снова!");
+    } else {
+        let numberSecond = prompt("Введите второе число");
 
-if (secondNumber === null) {
-	alert("Введите число");
-} else if (!isNaN(parseInt(secondNumber))) {
-	alert(+firstNumber + +secondNumber);
-} else {
-	alert("Введите числовое значение");
-}*/
-
+        if (isNaN(+numberSecond)) {
+            alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
+        } else if (numberSecond.trim() === '') {
+            alert("Значение не может быть пустым!");
+        } else if (numberSecond === null) {
+            alert("До встречи снова!");
+        } else {
+            let summa = parseInt(numberFirst) + parseInt(numberSecond);
+            alert('Сумма: ' + summa);
+        }
+    }*/
 
 
 //Имитация бросания двух игральных костей
@@ -43,44 +48,61 @@ if (secondNumber === null) {
 
 
 //Создать программу, которая принимает значение от пользователя, а затем выводит случайное число от 1 до числа, что ввел пользователь.
-/*let userNumber = prompt("Введите число");
-if (isNaN(parseInt(userNumber))) {
+//------------------------------------------------------------------------------
+/*let numberFirst = prompt("Введите первое число");
+
+if (isNaN(+numberFirst)) {
 	alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
-} else if (userNumber === null) {
-	alert("Введите число");
-	
+} else if (numberFirst.trim() === '') {
+	alert("Значение не может быть пустым!");
+} else if (numberFirst === null) {
+	alert("До встречи снова!");
 } else {
-	alert(Math.floor(Math.random() * userNumber + 1));
+	let numberSecond = prompt("Введите второе число");
+
+	if (isNaN(+numberSecond)) {
+		alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
+	} else if (numberFirst >= numberSecond) {
+		alert("Значение второго числа должно быть больше первого!");
+	} else if (numberSecond.trim() === '') {
+		alert("Значение не может быть пустым!");
+	} else if (numberSecond === null) {
+		alert("До встречи снова!");
+	} else {
+		alert (Math.floor(Math.random() * (+numberSecond - +numberFirst + 1) + +numberFirst));
+	}
 }*/
 
 
 
 //Создать программу, которая принимает два значение от пользователя, а затем выводит случайное число от первого до второго числа, что ввел пользователь.
 //---------------------------------------------------------------
+/*let firstNumber = prompt("Введите первое число");
+let secondNumber;
+let differenceNumbers;
+let randomNumber;
 
-/*if (isNaN(parseInt(secondNumber, 10))) {
-	alert("Значение ДОЛЖНО быть ЧИСЛОВЫМ");
-	return(secondNumber);
+if (firstNumber === null) {
+	alert("Введите число");
+	return;
+} else if (!isNaN(parseInt(firstNumber))) {
+	secondNumber = prompt("Введите второе число");
+} else {
+	alert("Введите числовое значение");
+	return;
 }
-else if (secondNumber > firstNumber) {
-	let randomNumber = Math.floor(Math.random() * secondNumber + 1);
-	if (randomNumber > firstNumber) {
-		alert(randomNumber);
-	} else {
-		return randomNumber;
-	}
-}
-else if (secondNumber < firstNumber) {
-	let randomNumber = Math.floor(Math.random() * firstNumber + 1);
-	if (randomNumber > secondNumber)	{
-		alert(randomNumber);
-	} else {
-		return(randomNumber);
-	}
-}
-else if (secondNumber === firstNumber) {
-	alert("Введите разные числа");
+
+if (secondNumber === null) {
+	alert("Введите число");
+} else if (!isNaN(parseInt(secondNumber))) {
+	differenceNumbers = (secondNumber - firstNumber);
+} else if (differenceNumbers > 0) {
+	randomNumber = Math.floor(Math.random() * secondNumber + 1);
+	alert (randomNumber);
+} else {
+	alert("Второе значение должно быть больше первого");
 }*/
+
 
 
 //Используя конструкцию if..else, напишите код, который будет спрашивать: «Каково «официальное» название JavaScript?».
